@@ -1,0 +1,45 @@
+{
+  "description": "Identical sequential text segments; each job includes WAV postprocessing and QC; CPU/environment-dependent.",
+  "baseline": {
+    "engine": "per_job_cli",
+    "requested": 20,
+    "completed": 20,
+    "failed": 0,
+    "failure_details": [],
+    "engine_init_seconds": 0.001,
+    "processing_wall_seconds": 69.265,
+    "end_to_end_wall_seconds": 69.266,
+    "jobs_per_second": 0.289,
+    "median_job_seconds": 3.14,
+    "p95_job_seconds": 4.644,
+    "total_audio_seconds": 80.62,
+    "real_time_factor": 0.859,
+    "silence_failures": 0,
+    "clipping_failures": 0
+  },
+  "persistent": {
+    "engine": "persistent_model",
+    "requested": 20,
+    "completed": 20,
+    "failed": 0,
+    "failure_details": [],
+    "engine_init_seconds": 4.795,
+    "processing_wall_seconds": 28.302,
+    "end_to_end_wall_seconds": 33.097,
+    "jobs_per_second": 0.707,
+    "median_job_seconds": 1.448,
+    "p95_job_seconds": 1.646,
+    "total_audio_seconds": 79.991,
+    "real_time_factor": 0.354,
+    "silence_failures": 0,
+    "clipping_failures": 0
+  },
+  "all_jobs_completed": true,
+  "processing_time_reduction_percent": 59.14,
+  "processing_throughput_speedup": 2.447,
+  "notes": [
+    "Persistent engine loads the model once; measured initialization time is separately reported.",
+    "This is not a perceptual naturalness or word-error-rate evaluation.",
+    "For more reliable estimates repeat runs, alternate benchmark order and use longer text sets."
+  ]
+}
