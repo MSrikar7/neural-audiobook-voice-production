@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pytest
+httpx
+piper-tts>=1.8,<2
